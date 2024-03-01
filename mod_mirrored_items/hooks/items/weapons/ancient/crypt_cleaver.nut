@@ -1,8 +1,0 @@
-::mods_hookExactClass("items/weapons/ancient/crypt_cleaver", function(o) {
-	local create = o.create;
-	o.create = function()
-	{
-		create();
-		this.m.FlipIconLargeX = true;
-	}
-});

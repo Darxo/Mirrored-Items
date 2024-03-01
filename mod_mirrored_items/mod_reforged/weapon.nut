@@ -1,18 +1,23 @@
-::mods_hookExactClass("items/weapons/named/named_weapon", function(o) {
-
-	local oldGetValuesForRandomize = o.getValuesForRandomize;
-	o.getValuesForRandomize <- function()
+// This is hooking Reforged code which was marked as "to be moved into MSU"
+::MirroredItems.HooksMod.hook("scripts/items/weapons/named/named_weapon", function(q) {
+	q.create = @(__original) function()
 	{
-		if (this.m.BaseWeaponScript == null) return {};
+		__original();
+		this.m.Icon = this.m.MirrorSettingIcon + this.m.Icon;
+		this.m.IconLarge = this.m.MirrorSettingIconLarge + this.m.IconLarge;
+	}
 
-		local ret = oldGetValuesForRandomize();
+// Reforged Functions
+	q.getValuesForRandomize = @(__original) function()
+	{
+		local ret = __original();
+		if (this.m.BaseWeaponScript == null) return ret;
 
 		local baseWeapon = ::new(this.m.BaseWeaponScript);
-		ret.FlipIconX <- baseWeapon.FlipIconX;
-		ret.FlipIconY <- baseWeapon.FlipIconY;
-		ret.FlipIconLargeX <- baseWeapon.FlipIconLargeX;
-		ret.FlipIconLargeY <- baseWeapon.FlipIconLargeY;
+		ret.MirrorSettingIcon <- baseWeapon.m.MirrorSettingIcon;
+		ret.MirrorSettingIconLarge <- baseWeapon.m.MirrorSettingIconLarge;
 
 		return ret;
 	}
 });
+
