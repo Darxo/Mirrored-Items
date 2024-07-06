@@ -15,13 +15,13 @@
 // Private
 	function __mirrorItemIcon( _scriptPath, _flipHorizontal, _flipVertical, _flipHorizontalLarge, _flipVerticalLarge )
 	{
-		::Hardened.HooksMod.hook(_scriptPath, function(q) {
+		::MirroredItems.HooksMod.hook(_scriptPath, function(q) {
 			q.create = @(__original) function()
 			{
 				__original();
 
 				// We save the setting to automatically apply them to named items (with reforged)
-				this.m.MirrorSettingIcon = ::MirroredItems.Utility.__serializeMirrorSetting(this.m.IconLarge, _flipHorizontal, _flipVertical);
+				this.m.MirrorSettingIcon = ::MirroredItems.Utility.__serializeMirrorSetting(this.m.Icon, _flipHorizontal, _flipVertical);
 				this.m.MirrorSettingIconLarge = ::MirroredItems.Utility.__serializeMirrorSetting(this.m.IconLarge, _flipHorizontalLarge, _flipVerticalLarge);
 
 				this.m.Icon = this.m.MirrorSettingIcon + this.m.Icon;
