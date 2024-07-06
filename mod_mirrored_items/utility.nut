@@ -23,9 +23,6 @@
 				// We save the setting to automatically apply them to named items (with reforged)
 				this.m.MirrorSettingIcon = ::MirroredItems.Utility.__serializeMirrorSetting(this.m.Icon, _flipHorizontal, _flipVertical);
 				this.m.MirrorSettingIconLarge = ::MirroredItems.Utility.__serializeMirrorSetting(this.m.IconLarge, _flipHorizontalLarge, _flipVerticalLarge);
-
-				this.m.Icon = this.m.MirrorSettingIcon + this.m.Icon;
-				this.m.IconLarge = this.m.MirrorSettingIconLarge + this.m.IconLarge;
 			}
 		});
 	}
