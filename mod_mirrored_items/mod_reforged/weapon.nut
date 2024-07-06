@@ -7,8 +7,8 @@
 		if (this.m.BaseWeaponScript == null) return ret;
 
 		local baseWeapon = ::new(this.m.BaseWeaponScript);
-		ret.MirrorSettingIcon <- baseWeapon.m.MirrorSettingIcon;
-		ret.MirrorSettingIconLarge <- baseWeapon.m.MirrorSettingIconLarge;
+		if (this.m.MirrorSettingIcon == null) ret.MirrorSettingIcon <- baseWeapon.m.MirrorSettingIcon;
+		if (this.m.MirrorSettingIconLarge == null) ret.MirrorSettingIconLarge <- baseWeapon.m.MirrorSettingIconLarge;
 
 		return ret;
 	}
