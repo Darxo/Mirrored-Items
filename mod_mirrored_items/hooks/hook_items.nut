@@ -66,19 +66,3 @@
 	::MirroredItems.Utility.mirrorItemIcon(path + "two_handed_saif", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "two_handed_scimitar", true, false);
 }
-
-// Reforged Items
-{
-	local path = "";
-
-	// Default
-	path = "scripts/items/weapons/";
-	::MirroredItems.Utility.mirrorItemIcon(path + "rf_battle_axe", true, false, false, false);
-	::MirroredItems.Utility.mirrorItemIcon(path + "rf_estoc", false, true);
-	::MirroredItems.Utility.mirrorItemIcon(path + "rf_greatsword", false, true);
-	::MirroredItems.Utility.mirrorItemIcon(path + "rf_kriegsmesser", true, false);
-	::MirroredItems.Utility.mirrorItemIcon(path + "rf_poleflail", true, false);
-	::MirroredItems.Utility.mirrorItemIcon(path + "rf_reinforced_wooden_poleflail", true, false);
-	::MirroredItems.Utility.mirrorItemIcon(path + "rf_swordstaff", true, false);
-
-}
