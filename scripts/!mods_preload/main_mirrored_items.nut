@@ -1,7 +1,7 @@
 ::MirroredItems <- {
 	ID = "mod_mirrored_items",
 	Name = "Mirrored Items",
-	Version = "0.1.3"
+	Version = "0.1.4"
 }
 
 ::MirroredItems.HooksMod <- ::Hooks.register(::MirroredItems.ID, ::MirroredItems.Version, ::MirroredItems.Name);
