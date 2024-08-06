@@ -11,4 +11,5 @@
 	::MirroredItems.Utility.mirrorItemIcon(path + "rf_poleflail", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "rf_reinforced_wooden_poleflail", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "rf_swordstaff", true, false);
+	::MirroredItems.Utility.mirrorItemIcon(path + "rf_poleaxe", true, false);
 }
