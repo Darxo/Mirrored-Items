@@ -13,3 +13,7 @@
 	::include("mod_mirrored_items/ui/load.nut");
 	::include("mod_mirrored_items/load");		// Load MirroredItems-Adjustments and other hooks
 });
+
+::MirroredItems.HooksMod.queue(">mod_reforged, >mod_modular_vanilla, >mod_msu", function() {
+	::includeFiles(::IO.enumerateFiles("mod_mirrored_items/hooks_verylate"));
+}, ::Hooks.QueueBucket.VeryLate);

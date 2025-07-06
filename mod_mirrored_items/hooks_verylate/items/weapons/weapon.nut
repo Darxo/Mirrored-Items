@@ -5,6 +5,11 @@
 	{
 		__original();
 
+		// We adjust the Icon and IconLarge paths according to the MirrorSettings, that were set for this item
+		// This has to happen at the very end of any create function so we have the most up-to-date state, hence why we use hookTree
+		// This has to happen in QueueBucket.VeryLate at the very least, because of ModularVanilla
+		//	- they switcheroo the randomizeValue function in a hookTree on item.nut on the create function during QueueBucket.Late
+		//	- that causes randomizeValue execution to be pushed further back; too late for regular hookTree weapon create hooks to catch its result
 		if (this.m.MirrorSettingIcon != null) this.m.Icon = this.m.MirrorSettingIcon + this.m.Icon;
 		if (this.m.MirrorSettingIconLarge != null) this.m.IconLarge = this.m.MirrorSettingIconLarge + this.m.IconLarge;
 	}
