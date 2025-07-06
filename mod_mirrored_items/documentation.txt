@@ -29,6 +29,10 @@
 
 ### Changes: ###
 
+0.1.5
+	- Fix named weapons not being mirrored correctly
+	- Support Great Khopesh (Reforged)
+
 0.1.4
 	- Change requirements to Modular Vanilla and adjust code to work under that framework
 	- Support Poleaxe, Halberd and Voulge from Reforged
