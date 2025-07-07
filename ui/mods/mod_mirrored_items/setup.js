@@ -38,6 +38,6 @@ MirroredItems.Assets = {
 			}
 		}
 
-		return "scale(" + scaleX + "," + scaleY + ")"
+		return "scale(" + scaleX + "," + scaleY + ")";
 	}
 }
