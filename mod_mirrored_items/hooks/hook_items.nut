@@ -57,6 +57,7 @@
 
 	path = "scripts/items/weapons/legendary/";
 	::MirroredItems.Utility.mirrorItemIcon(path + "lightbringer_sword", true, true);
+	::MirroredItems.Utility.mirrorItemIcon(path + "miasma_flail", true, false);
 
 	path = "scripts/items/weapons/oriental/";
 	::MirroredItems.Utility.mirrorItemIcon(path + "polemace", true, false);
