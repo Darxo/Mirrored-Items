@@ -1,7 +1,7 @@
 ::MirroredItems <- {
 	ID = "mod_mirrored_items",
 	Name = "Mirrored Items",
-	Version = "0.1.5",
+	Version = "0.1.6",
 	GitHubURL = "https://github.com/Darxo/Mirrored-Items",
 }
 

@@ -29,6 +29,10 @@
 
 ### Changes: ###
 
+0.1.6
+	- Support new Barrowkin Weapons (Reforged)
+	- Support Miasma Flail (Of Flesh and Faith)
+
 0.1.5
 	- Support Great Khopesh (Reforged)
 	- Add Github Repository as Mod Source

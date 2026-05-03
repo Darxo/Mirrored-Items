@@ -2,8 +2,8 @@
 // Public
 	// _flipHorizontal if true, then the image is rotated right to left
 	// _flipVertical if true, then the image is rotated top to bottom
-	// _extra1 if this is used (true/false) then this value is talen for horizontal flipping of the large icon only
-	// _extra2 if this is used (true/false) then this value is talen for vertical flipping of the large icon only
+	// _extra1 if this is used (true/false) then this value is taken for horizontal flipping of the large icon only
+	// _extra2 if this is used (true/false) then this value is taken for vertical flipping of the large icon only
 	function mirrorItemIcon( _scriptPath, _flipHorizontal, _flipVertical, _extra1 = null, _extra2 = null )
 	{
 		if ( _extra1 == null )	// normally both types of icons will flipped the same way. in that case we dont evaluate the extra parameter
