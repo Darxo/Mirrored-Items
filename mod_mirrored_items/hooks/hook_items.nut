@@ -66,4 +66,17 @@
 	::MirroredItems.Utility.mirrorItemIcon(path + "swordlance", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "two_handed_saif", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "two_handed_scimitar", true, false);
+
+	{	// Draugr
+		path = "scripts/items/weapons/rf_draugr/";
+		::MirroredItems.Utility.mirrorItemIcon(path + "rf_draugr_battle_axe", true, false);
+		::MirroredItems.Utility.mirrorItemIcon(path + "rf_draugr_greataxe", true, false);
+		::MirroredItems.Utility.mirrorItemIcon(path + "rf_draugr_shaman_staff", true, false, false, false);
+		::MirroredItems.Utility.mirrorItemIcon(path + "rf_draugr_sword", true, true);
+		::MirroredItems.Utility.mirrorItemIcon(path + "rf_draugr_voulge", true, false);
+		::MirroredItems.Utility.mirrorItemIcon(path + "rf_draugr_voulge", true, false);
+
+		// This Reforged Draugr Item does not use a BaseItemScript, so we manually adjust it
+		::MirroredItems.Utility.mirrorItemIcon("scripts/items/weapons/named/named_rf_draugr_greatsword", false, true);
+	}
 }
