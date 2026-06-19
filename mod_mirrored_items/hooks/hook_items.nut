@@ -7,6 +7,8 @@
 	::MirroredItems.Utility.mirrorItemIcon(path + "arming_sword", true, true);
 	::MirroredItems.Utility.mirrorItemIcon(path + "bardiche", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "billhook", true, false);
+	::MirroredItems.Utility.mirrorItemIcon(path + "estoc", true, false);
+	::MirroredItems.Utility.mirrorItemIcon(path + "exesword", false, true);
 	::MirroredItems.Utility.mirrorItemIcon(path + "fencing_sword", true, true);
 	::MirroredItems.Utility.mirrorItemIcon(path + "goedendag", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "greataxe", true, false);
@@ -19,6 +21,7 @@
 	::MirroredItems.Utility.mirrorItemIcon(path + "noble_sword", true, true);
 	::MirroredItems.Utility.mirrorItemIcon(path + "pike", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "pitchfork", true, false);
+	::MirroredItems.Utility.mirrorItemIcon(path + "poleaxe", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "polehammer", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "scimitar", true, true);
 	::MirroredItems.Utility.mirrorItemIcon(path + "shamshir", true, true);
@@ -33,6 +36,12 @@
 	::MirroredItems.Utility.mirrorItemIcon(path + "warbrand", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "warfork", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "woodcutters_axe", true, false);
+
+	// Named items
+	path = "scripts/items/weapons/named/";
+	::MirroredItems.Utility.mirrorItemIcon(path + "named_estoc", true, false);
+	::MirroredItems.Utility.mirrorItemIcon(path + "named_exesword", false, true);
+	::MirroredItems.Utility.mirrorItemIcon(path + "named_poleaxe", true, false);
 
 	// Ancient
 	path = "scripts/items/weapons/ancient/";
