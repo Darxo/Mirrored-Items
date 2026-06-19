@@ -29,6 +29,10 @@
 
 ### Changes: ###
 
+0.1.7
+	- Support new weapons introduced in Vanilla 1.5.2.2
+	- Support **Skull Crusher** (Reforged)
+
 0.1.6
 	- Support new Barrowkin Weapons (Reforged)
 	- Support Miasma Flail (Of Flesh and Faith)
