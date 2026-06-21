@@ -16,6 +16,11 @@
 	::MirroredItems.Utility.mirrorItemIcon(path + "rf_halberd", true, false);
 	::MirroredItems.Utility.mirrorItemIcon(path + "rf_voulge", true, false);
 
+	{	// Greenskins
+		path = "scripts/items/weapons/greenskins/";
+		::MirroredItems.Utility.mirrorItemIcon(path + "rf_orc_mace_2h", true, false);
+	}
+
 	{	// Draugr
 		path = "scripts/items/weapons/rf_draugr/";
 		::MirroredItems.Utility.mirrorItemIcon(path + "rf_draugr_battle_axe", true, false);
